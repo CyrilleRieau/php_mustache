@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="static/index.css" />
+    <title>Formulaires</title>
+
+</head>
+
+<body>
+    {{> partial/nav}} {{> partial/header}}
+    <h2>{{form}}</h2>
+    <form method="POST" id="nomination">
+        <input type="text" name="Pseudo" id="pseudo" placeholder="Phone, email or username" /><br/>
+        <input type="password" name="pwd" placeholder="Password" id="pwd" /><input type="submit" value="Log In" class="log" /><br/>
+        <input type="checkbox" name="choix" id="checkbox" checked /><label for="choix" class="style">Remember me . </label>
+        <a href="https://twitter.com/account/begin_password_reset" class="rappel">Forgot password ?</a>
+    </form>
+    {{> partial/footer}}
+</body>
+
+</html>
