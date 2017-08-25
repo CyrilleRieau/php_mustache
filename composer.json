@@ -1,3 +1,4 @@
 {
-    "require": {"mustache/mustache":"^2.12.0"}
+    "require": {"mustache/mustache":"^2.12.0",
+        "guzzlehttp/guzzle": "^6.3"}
 }
